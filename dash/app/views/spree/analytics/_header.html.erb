@@ -1,4 +1,4 @@
-<% if Spree::Dash::Config.configured? %>
+<% if Spree::Dash::Config.configured? && defined?(analytics_tags) %>
   <script type='text/javascript'>
     var jirafe= <%= raw analytics_tags.to_json %>;
     (function(){
